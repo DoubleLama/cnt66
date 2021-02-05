@@ -1,0 +1,15 @@
+.custom-nav {
+  background-color: $primary;
+  border-bottom: 0.1rem solid $secondary;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.175);
+  a {
+    color: white;
+  }
+  a:focus {
+    outline: 0;
+  }
+}
+
+.logo {
+  height: 3rem;
+}

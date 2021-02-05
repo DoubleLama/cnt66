@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import 'bootstrap';
+
+@import './stylesheets/_actiontext';
+
+@import "trix/dist/trix";
+
+@import "flatpickr/dist/flatpickr.min";
+
+@import './stylesheets/administrate/application';
+
+@import './stylesheets/main';
+
+@import './stylesheets/navbar';

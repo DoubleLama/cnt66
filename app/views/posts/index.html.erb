@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<div class="container bg-light p-3">
+  <h2 class="home-header text-center py-1">Articles les plus récents </h2>
+<% @posts.each do |post| %>
+  <div class="card my-2 p-2">
+    <h3 class="post-title"><%= post.title %></h3>
+    <%if post.subtitle%>
+      <p class="post-subtitle"><%= post.subtitle %></p>
+    <% end %>
+    <p class="fs-6 text-muted"><%= post.created_at.strftime("%A %d %B %Y").downcase %></p>
+    <div class="p-3">
+      <%= post.body%>
+      <%= link_to 'SUITE', post, class:"post-link text-right" %>
+    </div>
+      <% if user_signed_in? && current_user.id == post.id%>
+        <div>
+          <%= link_to 'Éditer', edit_post_path(post) %> |
+          <%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Etes vous sûr ?' } %>
+        </div>
+      <% end %>
+    </div>
+<% end %>
+<% if user_signed_in? %>
+  <%= link_to 'Nouvel article', new_post_path %>
+<% end %>
+</div>

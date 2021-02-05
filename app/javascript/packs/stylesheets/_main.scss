@@ -1,0 +1,77 @@
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #868e96;
+$gray-dark: #343a40;
+$primary: #AD0C11;
+$secondary: #000000;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+body {
+  background: linear-gradient(150deg, $primary 0%, $secondary 81%);
+}
+
+.post-title {
+  color: $primary;
+}
+
+.post-subtitle {
+ text-transform: uppercase;
+}
+
+.home-header {
+  background-color: $primary;
+  color: white;
+}
+
+.post-link {
+  text-decoration: none;
+  color: $primary;
+}
+
+.trix-content {
+  background-color: #F6F6F6;
+  height: 8rem;
+  overflow: hidden;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+}
+
+.logo {
+  height: 220px;
+}
+
+.jumbo {
+  height: 15rem;
+  background-color: $primary;
+}
+
+.under-jumbo {
+  height: 2rem;
+  background-color: $light;
+}
+.devise-links {
+  text-decoration: none;
+  color: $primary;
+}
+
+.contact {
+  min-height: 80vh;
+}
